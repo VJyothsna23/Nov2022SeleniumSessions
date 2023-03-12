@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [TestNG Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="3" parallel="tests" name="Amazon Test(failed)" verbose="4">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <classes>
+      <class name="TestNGSessions.AmazonTest">
+        <methods>
+          <include name="isHelpExistTest"/>
+          <include name="tearDown"/>
+          <include name="searchExistTest"/>
+          <include name="titleTest"/>
+          <include name="urlTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestNGSessions.AmazonTest -->
+    </classes>
+  </test> <!-- Amazon Test(failed) -->
+</suite> <!-- Failed suite [TestNG Regression Suite] -->
